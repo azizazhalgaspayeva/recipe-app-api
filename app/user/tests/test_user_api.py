@@ -169,7 +169,7 @@ class PrivateUserApiTests(TestCase):
     def test_update_user_profile(self):
         """Test updating the user profile for the authenticated user."""
         payload = {
-            'name': 'Updated name', 
+            'name': 'Updated name',
             'password': 'updated-password'
         }
 

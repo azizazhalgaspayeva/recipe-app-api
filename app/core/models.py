@@ -64,7 +64,7 @@ class Recipe(models.Model):
 
 class Tag(models.Model):
     """Tags for fioltering recipes."""
-    user = models.ForeignKey(\
+    user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
@@ -72,3 +72,4 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+        
